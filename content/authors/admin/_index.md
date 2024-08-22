@@ -44,6 +44,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: "mailto:selim.amrari@alumni.epfl.ch"  # For a direct email link, use "mailto:test@example.org".
+- icon: linkedin-in
+  icon_pack: fab
+  link: https://www.linkedin.com/in/selim-amrari08
 #- icon: twitter
 #  icon_pack: fab
 #  link: https://twitter.com/GeorgeCushen
