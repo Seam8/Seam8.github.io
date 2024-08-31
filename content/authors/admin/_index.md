@@ -72,6 +72,6 @@ user_groups:
 - Visitors
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I am a Senior Data Scientist with extensive experience in remote sensing, image processing, time series forecasting, and natural language processing. My career began with satellite data analysis, initially applied to coastal oceanography. Over the past six years, I have worked at two top-ranking startups. The first focused on precision agriculture, while the second specialized in optimizing hospital workflows.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+In my role as a Data Scientist, I prioritize developing robust solutions that deliver stable results. I avoid using models as black boxes, ensuring that I fully understand the algorithms under the hood. This approach enables me to accurately assess the validity and scope of the solutions I build.
