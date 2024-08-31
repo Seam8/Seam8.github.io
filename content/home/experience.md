@@ -2,7 +2,7 @@
 # Experience widget.
 widget = "experience"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = false  # Activate this widget? true/false
+active = true  # Activate this widget? true/false
 weight = 40  # Order that this section will appear.
 
 title = "Experience"
@@ -18,27 +18,72 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "CEO"
-  company = "GenCoin"
-  company_url = ""
-  location = "California"
-  date_start = "2017-01-01"
+  title = "Senior Data Scientist - AI Expert"
+  company = "Caplyps / Saniia SA"
+  company_url = "https://saniia.ch/"
+  location = "Sion, Valais, Switzerland"
+  date_start = "2021-10-01"
   date_end = ""
   description = """
   Responsibilities include:
   
-  * Analysing
-  * Modelling
-  * Deploying
+  * Improved, optimized and maintain products dedicated to hospital emergency flows forecasting
+  * Developed several PoCs for customers demand forecasting and take part in the design of MVPs
+  * Responsible for assessing candidates for Data Scientist roles with a focus on Natural Language Processing.
+  * Built a custom infrastructure, migrate all our deployed products into containers
   """
+  
+[[experience]]
+  title = "Data Scientist"
+  company = "Gamaya"
+  company_url = "https://gamaya.com/en_us/"
+  location = "Morges, Vaud, Switzerland"
+  date_start = "2019-02-01"
+  date_end = "2021-09-30"
+  description = """
+  * Satellite time series analysis for large scale crop monitoring and anomaly detection
+  * Development a specific architecture of model enabling a wide range of spatio-temporal analysis of satellite images by combining recurrent and convolutional network architectures.
+  * Development and integration of drone/satellite images alignment (coregistration) pipeline
+  * Development and integration of a cloud detection pipeline for satellite images
+  * Nutrient deficiency identification based on hyperspectral imagery
+  * Implementation of Computer vision algorithms for sowing lines detection
+  * Supervising external efforts as well as internship on research tasks.
+  """
+  
+[[experience]]
+  title = "Research Engineer in Remote Sensing"
+  company = "IFREMER"
+  company_url = "https://www.ifremer.fr/"
+  location = "Noumea, New Caledonia"
+  date_start = "2018-03-01"
+  date_end = "2018-09-30"
+  description = """Research Engineer in Remote Sensing"""
+  
+[[experience]]
+  title = "Master Project"
+  company = "IFREMER"
+  company_url = "https://www.ifremer.fr/"
+  location = "Noumea, New Caledonia"
+  date_start = "2017-08-01"
+  date_end = "2018-02-28"
+  description = """Analysis of spatio-temporal changes based on geostatistics and satellite remote sensing"""
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
-  company_url = ""
-  location = "California"
-  date_start = "2016-01-01"
-  date_end = "2016-12-31"
-  description = """Taught electronic engineering and researched semiconductor physics."""
-
+  title = "Intern"
+  company = "IFREMER"
+  company_url = "https://www.ifremer.fr/"
+  location = "Noumea, New Caledonia"
+  date_start = "2016-07-01"
+  date_end = "2016-09-30"
+  description = """Analysis of spatio-temporal changes based on geostatistics and satellite remote sensing"""
+  
+[[experience]]
+  title = "Teaching assistant"
+  company = "EPFL"
+  company_url = "https://www.epfl.ch/"
+  location = "Lausanne, Vaud, Switzerland"
+  date_start = "2015-09-01"
+  date_end = "2016-01-30"
+  description = """Hydrology for engineer"""
+  
 +++

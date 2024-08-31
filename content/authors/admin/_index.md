@@ -18,14 +18,16 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: Data Scientist always willing to to take part in the development of high-impact M-L applications.
 
 interests:
-- Artificial Intelligence
+- Machine Learning
+- Python programming
 - Remote Sensing
 - Computer Vision
 - Time Series Forecasting
 - Natural Language Processing
+- Spatial Analysis
 
 education:
   courses:
@@ -44,6 +46,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: "mailto:selim.amrari@alumni.epfl.ch"  # For a direct email link, use "mailto:test@example.org".
+- icon: linkedin-in
+  icon_pack: fab
+  link: https://www.linkedin.com/in/selim-amrari08
 #- icon: twitter
 #  icon_pack: fab
 #  link: https://twitter.com/GeorgeCushen
@@ -69,6 +74,6 @@ user_groups:
 - Visitors
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I am a Senior Data Scientist with extensive experience in remote sensing, image processing, time series forecasting, and natural language processing. My career began with satellite data analysis, initially applied to coastal oceanography. Over the past six years, I have worked at two top-ranking startups. The first focused on precision agriculture, while the second specialized in optimizing hospitals' workflows.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+In my role as a Data Scientist, I prioritize developing robust solutions that deliver stable results. I avoid using models as black boxes, ensuring that I fully understand the algorithms under the hood. This approach enables me to accurately assess the validity and scope of the solutions I build.
