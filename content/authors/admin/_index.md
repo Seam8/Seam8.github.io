@@ -18,14 +18,15 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: Data Scientist always willing to to take part in the development of high-impact M-L applications.
 
-interests:
+hard skills:
 - Artificial Intelligence
 - Remote Sensing
 - Computer Vision
 - Time Series Forecasting
 - Natural Language Processing
+- Spatial Analysis
 
 education:
   courses:
