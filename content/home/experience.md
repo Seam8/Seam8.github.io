@@ -32,7 +32,7 @@ date_format = "Jan 2006"
   * Responsible for assessing candidates for Data Scientist roles with a focus on Natural Language Processing.
   * Built a custom infrastructure, migrate all our deployed products into containers
   """
-
+  
 [[experience]]
   title = "Data Scientist"
   company = "Gamaya"
@@ -49,29 +49,24 @@ date_format = "Jan 2006"
   * Implementation of Computer vision algorithms for sowing lines detection
   * Supervising external efforts as well as internship on research tasks.
   """
-
+  
 [[experience]]
   title = "Research Engineer in Remote Sensing"
   company = "IFREMER"
   company_url = "https://www.ifremer.fr/"
   location = "Noumea, New Caledonia"
   date_start = "2018-03-01"
-  date_end = "2028-09-30"
-  description = """
-    Research and Development Engineer in Remote SensingResearch Development Engineer in Remote Sensing
-  """
-
+  date_end = "2018-09-30"
+  description = """Research Engineer in Remote Sensing"""
+  
 [[experience]]
   title = "Master Project"
   company = "IFREMER"
   company_url = "https://www.ifremer.fr/"
   location = "Noumea, New Caledonia"
   date_start = "2017-08-01"
-  date_end = "2018-02-30"
-  description = """
-    Remote sensing and classification of benthic landscapes for satellite Derived Bathymetry
-(grade : 5.5)
-  """
+  date_end = "2018-02-28"
+  description = """Analysis of spatio-temporal changes based on geostatistics and satellite remote sensing"""
 
 [[experience]]
   title = "Intern"
@@ -80,20 +75,15 @@ date_format = "Jan 2006"
   location = "Noumea, New Caledonia"
   date_start = "2016-07-01"
   date_end = "2016-09-30"
-  description = """
-    Analysis of spatio-temporal changes based on geostatistics and satellite remote sensing
-  """
-
+  description = """Analysis of spatio-temporal changes based on geostatistics and satellite remote sensing"""
+  
 [[experience]]
   title = "Teaching assistant"
   company = "EPFL"
-  company_url = ""
+  company_url = "https://www.epfl.ch/"
   location = "Lausanne, Vaud, Switzerland"
   date_start = "2015-09-01"
   date_end = "2016-01-30"
-  description = """
-    Hydrology for engineer
-  """
-
-
+  description = """Hydrology for engineer"""
+  
 +++
