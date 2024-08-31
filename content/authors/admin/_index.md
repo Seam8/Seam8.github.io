@@ -20,7 +20,7 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: Data Scientist always willing to to take part in the development of high-impact M-L applications.
 
-hard skills:
+interests:
 - Artificial Intelligence
 - Remote Sensing
 - Computer Vision
