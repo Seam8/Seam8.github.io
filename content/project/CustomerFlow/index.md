@@ -1,5 +1,5 @@
 ---
-title: Predicting Restaurant Customer Flow with Transformer-Based Deep Learning
+title: Predicting Restaurant Client Flow with Transformer-Based Deep Learning
 summary: ""
 tags:
 - Deep Learning
