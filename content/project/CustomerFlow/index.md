@@ -1,5 +1,6 @@
 ---
-title: Predicting Restaurant Customer Flow with Transformer-Based Deep Learning
+
+title: Predicting Restaurant Client Flow with Transformer-Based Deep Learning
 summary: ""
 tags:
 - Deep Learning
@@ -20,6 +21,7 @@ links:
   name: Demo Platform
   url: https://selam88-tempo-dash.streamlit.app/
 url_code: "https://selam88-tempo-dash.streamlit.app/"
+
 url_pdf: ""
 url_slides: ""
 url_video: ""
