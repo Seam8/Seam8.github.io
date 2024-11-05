@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 65  # Order that this section will appear.
 
 
-title = "Personal Projects (For fun !)"
+title = "Personal Exploratory and Passion-Driven Projects"
 subtitle = ""
 
 [content]
