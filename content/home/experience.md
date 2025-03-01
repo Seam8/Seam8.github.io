@@ -19,7 +19,7 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
   title = "Senior Data Scientist - AI Expert"
-  company = "Caplyps / Saniia SA"
+  company = "Calyps / Saniia SA"
   company_url = "https://saniia.ch/"
   location = "Sion, Valais, Switzerland"
   date_start = "2021-10-01"
