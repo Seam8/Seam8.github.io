@@ -10,18 +10,15 @@ date: "2023-01-15T00:00:00Z"
 external_link: ""
 
 image:
-  caption: "Harvested footprint detection.<br />
-   Left: processed triplet of images (one being fully cloudy).<br /> 
-   Center: pseudo-labeling.<br /> 
-   Rigth: predictions"
+  caption: "Latent space from pretrained Transformer with classes projection"
   focal_point: Smart
 
 links:
 - icon: gitlab
   icon_pack: fab
   name: Follow
-  url: https://gitlab.com/Selam08/ImageSequence_2_PixelSegmentation
-url_code: "https://gitlab.com/Selam08/ImageSequence_2_PixelSegmentation"
+  url: https://gitlab.com/Selam08/text_classification_and_zero_shot_classif
+url_code: "https://gitlab.com/Selam08/text_classification_and_zero_shot_classif"
 url_pdf: ""
 url_slides: ""
 url_video: ""
