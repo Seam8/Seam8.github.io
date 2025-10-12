@@ -1,5 +1,5 @@
 ---
-title: Satellite Derived Bathymetry
+title: Electricity Demand Forecasting
 summary: ""
 tags:
 - Remote Sensing
@@ -14,6 +14,7 @@ image:
    Center: pseudo-labeling.<br /> 
    Rigth: predictions"
   focal_point: Smart
+  filename: featured.gif
 
 links:
 - icon: gitlab
@@ -34,4 +35,4 @@ slides: ""
 
 ---
 
-![Alt text](construction.jpg "a title")
+![Alt text](featured.gif "a title")
