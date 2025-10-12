@@ -14,7 +14,6 @@ image:
    Center: pseudo-labeling.<br /> 
    Rigth: predictions"
   focal_point: Smart
-  filename: featured.gif
 
 links:
 - icon: gitlab
@@ -35,4 +34,4 @@ slides: ""
 
 ---
 
-![Alt text](featured.gif "a title")
+![Alt text](bench.gif "a title")
