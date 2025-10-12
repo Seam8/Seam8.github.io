@@ -1,5 +1,200 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects | Academic</title><link>https://seam8.github.io/project/</link><atom:link href="https://seam8.github.io/project/index.xml" rel="self" type="application/rss+xml"/><description>Projects</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate><image><url>img/map[gravatar:%!s(bool=false) shape:circle]</url><title>Projects</title><link>https://seam8.github.io/project/</link></image><item><title>External Project</title><link>https://seam8.github.io/project/external-project/</link><pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate><guid>https://seam8.github.io/project/external-project/</guid><description/></item><item><title>Internal Project</title><link>https://seam8.github.io/project/internal-project/</link><pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate><guid>https://seam8.github.io/project/internal-project/</guid><description>&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p>
-&lt;p>Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p>
-&lt;p>Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p>
-&lt;p>Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p>
-&lt;p>Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Sélim Amrari</title>
+    <link>//localhost:1313/project/</link>
+      <atom:link href="//localhost:1313/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Projects</title>
+      <link>//localhost:1313/project/</link>
+    </image>
+    
+    <item>
+      <title>Satellite Derived Bathymetry</title>
+      <link>//localhost:1313/project/satellite-derived-bathymetry/</link>
+      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/satellite-derived-bathymetry/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Alt text&#34; src=&#34;//localhost:1313/project/satellite-derived-bathymetry/construction.jpg&#34; title=&#34;a title&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Electricity Demand Forecasting</title>
+      <link>//localhost:1313/project/electricity-demand-forecasting/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/electricity-demand-forecasting/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Demo&#34; src=&#34;//localhost:1313/media/bench.gif&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Leveraging Transformer to achieve unsupervised text classification</title>
+      <link>//localhost:1313/project/leveraging-pretrained-transformer-model-to-achieve-unsupervised-text-classification/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/leveraging-pretrained-transformer-model-to-achieve-unsupervised-text-classification/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Alt text&#34; src=&#34;//localhost:1313/project/leveraging-pretrained-transformer-model-to-achieve-unsupervised-text-classification/construction.jpg&#34; title=&#34;a title&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Predicting Restaurant Client Flow with Transformer-Based Deep Learning</title>
+      <link>//localhost:1313/project/customerflow/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/customerflow/</guid>
+      <description>&lt;h2 id=&#34;predicting-restaurant-customer-flow-with-transformer-based-deep-learning&#34;&gt;Predicting Restaurant Customer Flow with Transformer-Based Deep Learning&lt;/h2&gt;
+&lt;p&gt;In the ever-evolving world of restaurant management, understanding and anticipating customer flow is key to optimizing operations. Whether it’s staffing, inventory management, or food preparation, having accurate predictions on when and how many customers will show up is a game changer. With advancements in AI, particularly deep learning, we are now able to tackle this challenge more efficiently than ever before.&lt;/p&gt;
+&lt;h2 id=&#34;the-challenge-predicting-customer-flow&#34;&gt;The Challenge: Predicting Customer Flow&lt;/h2&gt;
+&lt;p&gt;Restaurants often face fluctuating demand based on factors like time of day, day of the week, holidays, weather conditions, and even special events. Traditional forecasting methods, while somewhat effective, often fall short when it comes to capturing the complex, dynamic patterns in customer behavior. This leads to either over-preparation, which wastes resources, or under-preparation, which results in poor customer service.&lt;/p&gt;
+&lt;p&gt;To address this, I embarked on a project to develop a deep learning model capable of predicting customer flow with a higher degree of accuracy. The model is based on Transformer technology—a model architecture originally designed for natural language processing tasks—and functions as a multivariate time series model. This architecture can handle multiple types of input data, including real or categorical variables from both static and time-dependent features, offering unparalleled flexibility and accuracy in its predictions.&lt;/p&gt;
+&lt;h2 id=&#34;why-transformers&#34;&gt;Why Transformers?&lt;/h2&gt;
+&lt;p&gt;Transformers have proven to be groundbreaking in handling sequential data due to their self-attention mechanism, which allows the model to focus on relevant parts of the input regardless of its position in the sequence. This is particularly useful for time series prediction, where past events (such as customer visits) have a direct influence on future outcomes. By leveraging this architecture, the model can “attend” to specific moments in time—whether it&amp;rsquo;s a recent surge in customers or a trend observed over previous weeks—when making its predictions.&lt;/p&gt;
+&lt;p&gt;Beside, one of the key advantages of this Transformer-based model is its ability to work as a multivariate time series model. It integrates multiple features from different types that impact customer flow, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Real time-dependent variables&lt;/strong&gt; (e.g., weather variables, previous customer counts)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Categorical time-dependent variables&lt;/strong&gt; (e.g., day of the week, holidays, local events)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Static features&lt;/strong&gt; (e.g., restaurant location)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Lastly, the architecture involves both an encoder and a decoder based on Transformers. The encoder processes information related to the past of the predicted time, while the decoder handles all &amp;ldquo;known&amp;rdquo; information relevant to the predicted hour or day. If a &amp;ldquo;known&amp;rdquo; variable is also recorded in the past and used by the encoder — which is typically the case — it&amp;rsquo;s possible to apply the same preprocessing to that variable for both the encoder and decoder.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take a common example from bars and restaurants: &amp;ldquo;Happy Hour.&amp;rdquo; This can be represented as a &amp;ldquo;known&amp;rdquo; hourly, time-dependent categorical variable. When predicting future customer flow, the model can consider the past Happy Hour schedule as well as the current plan at the predicted time. This enables the model to factor in both historical and future scheduling information when making its predictions.&lt;/p&gt;
+&lt;p&gt;This flexibility allows the model to account for a wide range of factors that influence customer visits, making it a powerful tool for restaurant managers to anticipate demand with precision.&lt;/p&gt;
+&lt;h2 id=&#34;building-the-model&#34;&gt;Building the Model&lt;/h2&gt;
+&lt;p&gt;The model is trained to predict several hourly and daily indicators. The hourly indicators include: the &lt;strong&gt;number of arrivals&lt;/strong&gt;, the &lt;strong&gt;total number of orders&lt;/strong&gt;, the &lt;strong&gt;number of full meal orders&lt;/strong&gt;, the &lt;strong&gt;number of drink or standing orders&lt;/strong&gt;, the &lt;strong&gt;average ticket price&lt;/strong&gt;, and the &lt;strong&gt;total transaction value&lt;/strong&gt;. Additionally, the model can forecast the &lt;strong&gt;total daily transaction&lt;/strong&gt; for the next five days, allowing managers to assess and compare upcoming days.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://selam88-tempo-dash.streamlit.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img alt=&#34;Alt text for the image&#34; src=&#34;//localhost:1313/project/customerflow/daily.png&#34; title=&#34;Daily predictions of total transaction for upcoming days&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;On the other hand, the hourly indicators help predict peak periods throughout the day. High arrival times require staff to be available for seating customers, setting tables, and providing menus. Periods with increased pressure on full meal orders—often reflected by a &lt;strong&gt;high average ticket&lt;/strong&gt; price—can be distinguished from times when quick-service orders like coffee, breakfast, or beverages dominate. This helps managers plan resources accordingly for different types of demand throughout the day.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://selam88-tempo-dash.streamlit.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img alt=&#34;Alt text for the image&#34; src=&#34;//localhost:1313/project/customerflow/hourly.png&#34; title=&#34;Daily predictions of total transaction for upcoming days&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The model is trained using historical data and its performance is evaluated by simulating each week separately. For every simulated week, the model is re-trained from scratch using only the data available prior to that test week. This ensures that the model is evaluated in realistic conditions, where future data is unknown and predictions are made based solely on past observations. By re-training for each week, the model’s ability to generalize is rigorously tested, providing a robust evaluation of its predictive accuracy over time.
+The result was a model capable of making highly accurate, time-specific predictions, which could be used to make informed decisions in real time.&lt;/p&gt;
+&lt;h2 id=&#34;results-and-demo-platform&#34;&gt;Results and Demo Platform&lt;/h2&gt;
+&lt;p&gt;Comparing hourly indicators helps anticipate peak times for customer arrivals, periods with high-value orders, and extended service durations when clients stay longer and require more attention. Typically, the prediction will indicate whether the first or second lunch service will experience higher arrivals, allowing for better staff planning. High-value order periods will be marked by a higher average ticket with the same amount of arrivals or fewer orders. The analysis will also reveal times when clients prefer a quick meal versus when they choose to stay longer and enjoy their time.&lt;/p&gt;
+&lt;p&gt;To showcase the capabilities of this model, I created an interactive demo platform where users can input their restaurant’s data and receive detailed customer flow predictions. The platform allows restaurant managers to visualize predicted customer volumes over time and adjust their staffing, inventory, and preparation strategies accordingly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;
+&lt;a href=&#34;https://selam88-tempo-dash.streamlit.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Please, have a look on the full demo plateform&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Automating Journal Recommendations with NLP</title>
+      <link>//localhost:1313/project/text-scope-classifier/</link>
+      <pubDate>Sat, 11 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/text-scope-classifier/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;How NLP Can Help Publishers Find the Perfect Journal for Your Paper&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In the fast-paced world of academic publishing, time is everything. Reviewers spend hours evaluating submissions, often having to turn away those that don’t fit a journal’s scope. For an open-access publisher like &lt;strong&gt;Frontiers&lt;/strong&gt;, with journals covering a broad range of scientific disciplines, this process can be streamlined through automation. Here, I walk through our approach to designing an NLP-driven classifier that recommends journals based on an article’s content.&lt;/p&gt;
+&lt;h3 id=&#34;-the-mission-streamline-journal-recommendations&#34;&gt;🚀 The Mission: Streamline Journal Recommendations&lt;/h3&gt;
+&lt;p&gt;Every year, Frontiers receives thousands of articles covering everything from neuroscience to environmental science. While this is great for scientific progress, it puts a burden on the peer-review process—especially when articles are submitted to journals outside their scope. The goal of this project was to build a system that could recommend a shortlist of the most suitable journals for each article, based on text alone, to streamline the review process. We aimed to create a system that would:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Automatically suggest most relevant journals based on article content,&lt;/li&gt;
+&lt;li&gt;Operate with high accuracy, given the diversity of journal topics&lt;/li&gt;
+&lt;li&gt;be easy to integrate into Frontiers’ workflows&lt;/li&gt;
+&lt;li&gt;Offer a reliable performance measure.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-the-dataset-january-2020-submissions&#34;&gt;🔍 The Dataset: January 2020 Submissions&lt;/h3&gt;
+&lt;p&gt;The dataset used included all articles published by Frontiers in January 2020, covering &lt;strong&gt;64 different journals&lt;/strong&gt;. Here’s the catch: journal popularity varied widely, with some journals having over 200 publications and others with fewer than 10. This imbalance posed a challenge for the model, addressed by carefully managing data handling and preprocessing.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Journal publication distribution&#34; src=&#34;//localhost:1313/project/text-scope-classifier/front_journals.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;-the-approach-leveraging-bert-and-xlnet-for-nlp&#34;&gt;🛠️ The Approach: Leveraging BERT and XLNet for NLP&lt;/h3&gt;
+&lt;p&gt;The project was designed as a multi-label classification problem, where each article might be suited to more than one journal. Two NLP models—&lt;strong&gt;BERT&lt;/strong&gt; and &lt;strong&gt;XLNet&lt;/strong&gt;— were chosen for testing their strong performance in language understanding. Using libraries such as &lt;strong&gt;FastBERT&lt;/strong&gt; and &lt;strong&gt;Hugging Face&lt;/strong&gt;, a pipeline has been set up to quickly test different configurations, and fine-tune each model on the dataset.&lt;/p&gt;
+&lt;h4 id=&#34;data-preprocessing&#34;&gt;Data Preprocessing&lt;/h4&gt;
+&lt;p&gt;Data preprocessing is crucial for performance:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Each article was split into sequences to increase training samples, capturing sections like the title, abstract, and author details, while excluding less informative parts like bibliographies.&lt;/li&gt;
+&lt;li&gt;We divided the dataset into training (75%), validation (12.5%), and test sets (12.5%). Journals with fewer than three publications were excluded due to insufficient data. As a result, each dataset contains at least one example of every journals.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-how-we-evaluated-model-success&#34;&gt;🔬 How We Evaluated Model Success&lt;/h3&gt;
+&lt;p&gt;To test the models, several performance metrics were established:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;F1-Score&lt;/strong&gt; for precision and recall insights.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Confusion Matrix&lt;/strong&gt; to visualize classification errors and highlight relationships between journals with overlapping fields.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Top-N Recommendation Accuracy&lt;/strong&gt;, a key usability metric that measures how often the correct journal appears in the top suggestions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This last metric was especially important for practical use—after all, the goal was to create a tool that helps editors quickly narrow down journal choices.&lt;/p&gt;
+&lt;h3 id=&#34;-results-bert-takes-the-lead&#34;&gt;📈 Results: BERT Takes the Lead&lt;/h3&gt;
+&lt;p&gt;The table below summarizes the results after training each model on sequences of 300 and 400 words:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Model&lt;/th&gt;
+&lt;th&gt;F1-Score (All Sequences)&lt;/th&gt;
+&lt;th&gt;F1-Score (Initial Sequences)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;BERT-300&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;0.51&lt;/td&gt;
+&lt;td&gt;0.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;BERT-400&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;0.39&lt;/td&gt;
+&lt;td&gt;0.40&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;XLNet-300&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;0.49&lt;/td&gt;
+&lt;td&gt;0.50&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;With a 300-word sequence length, both &lt;strong&gt;BERT&lt;/strong&gt; and &lt;strong&gt;XLNet&lt;/strong&gt; delivered competitive performance, though &lt;strong&gt;BERT&lt;/strong&gt; emerged slightly ahead in usability tests. With &lt;strong&gt;BERT, 78% of true journals were within the top 3 recommendations&lt;/strong&gt;, and this increased to &lt;strong&gt;85% within the top 5&lt;/strong&gt;. This success rate could be further optimized by averaging predictions across an article’s sequences.&lt;/p&gt;
+&lt;img src=&#34;BertUsage.png&#34; alt=&#34;Top-n accuracy for BERT&#34; style=&#34;background-color: white; padding: 10px; border-radius: 5px;&#34;&gt;
+&lt;h3 id=&#34;-key-insights-and-next-steps&#34;&gt;💡 Key Insights and Next Steps&lt;/h3&gt;
+&lt;p&gt;Analyzing the &lt;strong&gt;confusion matrix&lt;/strong&gt; of the BERT model highlighted that journals with related fields (e.g., neuroscience subfields) were often confused. This indicates the need to account for overlapping disciplines in future training.&lt;/p&gt;
+&lt;p&gt;Several potential improvements include:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Class Weights&lt;/strong&gt;: Applying weights to balance class loss, especially for underrepresented journals, would help address data imbalance.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Average Predictions&lt;/strong&gt;: Averaging predictions across an article’s sequences will statistically improve consistency and reduce misclassifications.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;a href=&#34;BertAllconfusion_matrix.png&#34; target=&#34;_blank&#34;&gt;
+  &lt;img src=&#34;BertAllconfusion_matrix.png&#34; alt=&#34;A beautiful view&#34; style=&#34;background-color: white;width:600px;&#34; onclick=&#34;window.open(this.parentNode.href); return false;&#34;&gt;
+&lt;/a&gt;
+&lt;h3 id=&#34;-conclusion-ai-powered-journal-recommendations-for-a-smarter-publishing-process&#34;&gt;🌟 Conclusion: AI-Powered Journal Recommendations for a Smarter Publishing Process&lt;/h3&gt;
+&lt;p&gt;Imagine an editor opening a new submission and immediately seeing a list of journals likely to be a perfect fit—saving time, effort, and accelerating the path to publication. This project is a significant step in that direction, showing that &lt;strong&gt;AI can bring real-world impact to scientific publishing&lt;/strong&gt;. By continuing to refine this system, we’re optimistic about achieving even more accurate, user-friendly journal recommendations.&lt;/p&gt;
+&lt;h3 id=&#34;-explore-the-code&#34;&gt;🧑‍💻 Explore the Code&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;GitHub Repository&lt;/strong&gt;: For those interested, you can explore the code in the 
+&lt;a href=&#34;https://gitlab.com/Selam08/papers-multiclass-classification&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitLab repository&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;This streamlined approach to journal recommendation combines cutting-edge NLP with practical considerations, promising efficiency gains for publishers and authors alike.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Classification of forest vegetation using LIDAR and hyperspectral remote sensing.</title>
+      <link>//localhost:1313/project/classification-of-forest-vegetation-using-lidar-and-hyperspectral-remote-sensing./</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/classification-of-forest-vegetation-using-lidar-and-hyperspectral-remote-sensing./</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Alt text&#34; src=&#34;//localhost:1313/project/classification-of-forest-vegetation-using-lidar-and-hyperspectral-remote-sensing./construction.jpg&#34; title=&#34;a title&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Image Sequence to Pixel Segmentation for Satellite change detection</title>
+      <link>//localhost:1313/project/imseq2pixseg/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/imseq2pixseg/</guid>
+      <description>&lt;h2 id=&#34;the-issue&#34;&gt;The issue&lt;/h2&gt;
+&lt;p&gt;Analyzing time series of satellite images often presents several challenges. When examining agricultural areas, the focus is typically on tracking changes over time, specifically through optical indices that are generally calculated as the zonal average of farming parcels. This approach requires precise boundary definitions for each parcel. However, many of these optical indices are highly sensitive to atmospheric conditions, especially cloud cover. A parcel that is partially obscured by clouds or even cloud shadows can result in skewed data. While standard convolutional networks applied to individual images can efficiently detect cloud footprints thanks its ability to observe spatial patterns, analyzing the time series to filter out clouds through anomaly detection is more complex. This is because changes such as harvesting, burning, or flooding might also be flagged as anomalies. However, traditional convolutional architectures struggle to properly analyze time series of images, as they are not well-suited for focusing on relative differences between time steps.&lt;/p&gt;
+&lt;p&gt;As a result, two main approaches are typically used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Analyzing structured values obtained through zonal averages after extensive preprocessing. However, this approach is highly sensitive to preprocessing errors, and developing such preprocessing models can be complex and time-consuming, especially if you want to apply convolutional networks to each time step image.&lt;/li&gt;
+&lt;li&gt;Connecting the results of a convolutional network to maintain the ability to analyze spatial patterns and easily detect clouds. Unfortunately, most architectures that take this approach end up with weak models because they fail to properly assess evolution between time steps.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;the-solution&#34;&gt;The solution&lt;/h2&gt;
+&lt;p&gt;A solution to this issue is to combine features from both convolutional and recurrent neural networks. This hybrid architecture allows the raw input structure (a two-dimensional grid) to be preserved, making it easier to detect spatial patterns from phenomena, such as cloud cover. At the same time, the model can effectively evaluate changes between time steps, offering greater flexibility and accuracy in time series analysis.&lt;/p&gt;
+&lt;p&gt;To do so, a network leveraging so-called ConvLSTM cells can be built. These cells are recurrent units that process time steps sequentially. Each LSTM cell has two internal states, often referred to as long-term and short-term memory, which carry information from previous time steps to the next. These states are updated through specific mathematical operations called forget, input, and output gates. For example, the forget gate can evaluate which time steps are relevant. In our case, with time steps being satellite images, an irrelevant one could be a cloudy image.&lt;/p&gt;
+&lt;p&gt;Here lies the strength of ConvLSTM. Unlike regular LSTMs, which involve multilinear regression to process time steps, ConvLSTMs apply convolution, preserving the 2D grid structure of the image. This allows ConvLSTMs to assign internal states to each pixel based on its local neighbors, enabling the network output to retain the same resolution as the original satellite image sequence.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Alt text&#34; src=&#34;https://gitlab.com/Selam08/ImageSequence_2_PixelSegmentation/-/raw/main/figs/layer_1_parcel_2.png?raw=true&#34; title=&#34;a title&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The previous image shows the internal hidden states, referred to as short-term memory, of 20 ConvLSTM cells while ingesting a sequence composed of 12 satellite images. As shown here, several cells (such as cells 8, 10, 13, and 18) do not react when ingesting cloudy time steps. Such cells, if returning hidden states and if used as early layers, may propagate the information about the presence of clouds to the lower part of the network.&lt;/p&gt;
+&lt;h2 id=&#34;the-results&#34;&gt;The results&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&#34;Alt text&#34; src=&#34;https://gitlab.com/Selam08/ImageSequence_2_PixelSegmentation/-/raw/main/figs/144.png?raw=true&#34; title=&#34;a title&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In this experiment, ConvLSTM-based networks were trained to identify the most recently harvested areas in agricultural parcels. The training labels were generated using pseudo-labeling,by applying a heuristic formula with discretization to sections of the images. Parcels were divided into training, validation, and test sets to ensure that none were present in both the test/validation and training sets. As seen in the previous image, the model manages to detect harvested surfaces more accurately and more integrally than the pseudo-labeling used.  It also demonstrates a much stronger ability to recognize harvests under various climatic conditions.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://gitlab.com/Selam08/ImageSequence_2_PixelSegmentation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Check the code on the repository !&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

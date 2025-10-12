@@ -14,6 +14,7 @@ image:
    Center: pseudo-labeling.<br /> 
    Rigth: predictions"
   focal_point: Smart
+  filename: "featured.gif"
 
 links:
 - icon: gitlab

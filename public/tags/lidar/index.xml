@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lidar | Sélim Amrari</title>
+    <link>//localhost:1313/tags/lidar/</link>
+      <atom:link href="//localhost:1313/tags/lidar/index.xml" rel="self" type="application/rss+xml" />
+    <description>Lidar</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Lidar</title>
+      <link>//localhost:1313/tags/lidar/</link>
+    </image>
+    
+    <item>
+      <title>Classification of forest vegetation using LIDAR and hyperspectral remote sensing.</title>
+      <link>//localhost:1313/project/classification-of-forest-vegetation-using-lidar-and-hyperspectral-remote-sensing./</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/classification-of-forest-vegetation-using-lidar-and-hyperspectral-remote-sensing./</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Alt text&#34; src=&#34;//localhost:1313/project/classification-of-forest-vegetation-using-lidar-and-hyperspectral-remote-sensing./construction.jpg&#34; title=&#34;a title&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Natural Language Processing | Sélim Amrari</title>
+    <link>//localhost:1313/tags/natural-language-processing/</link>
+      <atom:link href="//localhost:1313/tags/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
+    <description>Natural Language Processing</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 15 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Natural Language Processing</title>
+      <link>//localhost:1313/tags/natural-language-processing/</link>
+    </image>
+    
+    <item>
+      <title>Leveraging Transformer to achieve unsupervised text classification</title>
+      <link>//localhost:1313/project/leveraging-pretrained-transformer-model-to-achieve-unsupervised-text-classification/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/leveraging-pretrained-transformer-model-to-achieve-unsupervised-text-classification/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Alt text&#34; src=&#34;//localhost:1313/project/leveraging-pretrained-transformer-model-to-achieve-unsupervised-text-classification/construction.jpg&#34; title=&#34;a title&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Automating Journal Recommendations with NLP</title>
+      <link>//localhost:1313/project/text-scope-classifier/</link>
+      <pubDate>Sat, 11 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/text-scope-classifier/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;How NLP Can Help Publishers Find the Perfect Journal for Your Paper&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In the fast-paced world of academic publishing, time is everything. Reviewers spend hours evaluating submissions, often having to turn away those that don’t fit a journal’s scope. For an open-access publisher like &lt;strong&gt;Frontiers&lt;/strong&gt;, with journals covering a broad range of scientific disciplines, this process can be streamlined through automation. Here, I walk through our approach to designing an NLP-driven classifier that recommends journals based on an article’s content.&lt;/p&gt;
+&lt;h3 id=&#34;-the-mission-streamline-journal-recommendations&#34;&gt;🚀 The Mission: Streamline Journal Recommendations&lt;/h3&gt;
+&lt;p&gt;Every year, Frontiers receives thousands of articles covering everything from neuroscience to environmental science. While this is great for scientific progress, it puts a burden on the peer-review process—especially when articles are submitted to journals outside their scope. The goal of this project was to build a system that could recommend a shortlist of the most suitable journals for each article, based on text alone, to streamline the review process. We aimed to create a system that would:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Automatically suggest most relevant journals based on article content,&lt;/li&gt;
+&lt;li&gt;Operate with high accuracy, given the diversity of journal topics&lt;/li&gt;
+&lt;li&gt;be easy to integrate into Frontiers’ workflows&lt;/li&gt;
+&lt;li&gt;Offer a reliable performance measure.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-the-dataset-january-2020-submissions&#34;&gt;🔍 The Dataset: January 2020 Submissions&lt;/h3&gt;
+&lt;p&gt;The dataset used included all articles published by Frontiers in January 2020, covering &lt;strong&gt;64 different journals&lt;/strong&gt;. Here’s the catch: journal popularity varied widely, with some journals having over 200 publications and others with fewer than 10. This imbalance posed a challenge for the model, addressed by carefully managing data handling and preprocessing.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Journal publication distribution&#34; src=&#34;//localhost:1313/project/text-scope-classifier/front_journals.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;-the-approach-leveraging-bert-and-xlnet-for-nlp&#34;&gt;🛠️ The Approach: Leveraging BERT and XLNet for NLP&lt;/h3&gt;
+&lt;p&gt;The project was designed as a multi-label classification problem, where each article might be suited to more than one journal. Two NLP models—&lt;strong&gt;BERT&lt;/strong&gt; and &lt;strong&gt;XLNet&lt;/strong&gt;— were chosen for testing their strong performance in language understanding. Using libraries such as &lt;strong&gt;FastBERT&lt;/strong&gt; and &lt;strong&gt;Hugging Face&lt;/strong&gt;, a pipeline has been set up to quickly test different configurations, and fine-tune each model on the dataset.&lt;/p&gt;
+&lt;h4 id=&#34;data-preprocessing&#34;&gt;Data Preprocessing&lt;/h4&gt;
+&lt;p&gt;Data preprocessing is crucial for performance:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Each article was split into sequences to increase training samples, capturing sections like the title, abstract, and author details, while excluding less informative parts like bibliographies.&lt;/li&gt;
+&lt;li&gt;We divided the dataset into training (75%), validation (12.5%), and test sets (12.5%). Journals with fewer than three publications were excluded due to insufficient data. As a result, each dataset contains at least one example of every journals.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-how-we-evaluated-model-success&#34;&gt;🔬 How We Evaluated Model Success&lt;/h3&gt;
+&lt;p&gt;To test the models, several performance metrics were established:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;F1-Score&lt;/strong&gt; for precision and recall insights.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Confusion Matrix&lt;/strong&gt; to visualize classification errors and highlight relationships between journals with overlapping fields.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Top-N Recommendation Accuracy&lt;/strong&gt;, a key usability metric that measures how often the correct journal appears in the top suggestions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This last metric was especially important for practical use—after all, the goal was to create a tool that helps editors quickly narrow down journal choices.&lt;/p&gt;
+&lt;h3 id=&#34;-results-bert-takes-the-lead&#34;&gt;📈 Results: BERT Takes the Lead&lt;/h3&gt;
+&lt;p&gt;The table below summarizes the results after training each model on sequences of 300 and 400 words:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Model&lt;/th&gt;
+&lt;th&gt;F1-Score (All Sequences)&lt;/th&gt;
+&lt;th&gt;F1-Score (Initial Sequences)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;BERT-300&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;0.51&lt;/td&gt;
+&lt;td&gt;0.49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;BERT-400&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;0.39&lt;/td&gt;
+&lt;td&gt;0.40&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;XLNet-300&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;0.49&lt;/td&gt;
+&lt;td&gt;0.50&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;With a 300-word sequence length, both &lt;strong&gt;BERT&lt;/strong&gt; and &lt;strong&gt;XLNet&lt;/strong&gt; delivered competitive performance, though &lt;strong&gt;BERT&lt;/strong&gt; emerged slightly ahead in usability tests. With &lt;strong&gt;BERT, 78% of true journals were within the top 3 recommendations&lt;/strong&gt;, and this increased to &lt;strong&gt;85% within the top 5&lt;/strong&gt;. This success rate could be further optimized by averaging predictions across an article’s sequences.&lt;/p&gt;
+&lt;img src=&#34;BertUsage.png&#34; alt=&#34;Top-n accuracy for BERT&#34; style=&#34;background-color: white; padding: 10px; border-radius: 5px;&#34;&gt;
+&lt;h3 id=&#34;-key-insights-and-next-steps&#34;&gt;💡 Key Insights and Next Steps&lt;/h3&gt;
+&lt;p&gt;Analyzing the &lt;strong&gt;confusion matrix&lt;/strong&gt; of the BERT model highlighted that journals with related fields (e.g., neuroscience subfields) were often confused. This indicates the need to account for overlapping disciplines in future training.&lt;/p&gt;
+&lt;p&gt;Several potential improvements include:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Class Weights&lt;/strong&gt;: Applying weights to balance class loss, especially for underrepresented journals, would help address data imbalance.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Average Predictions&lt;/strong&gt;: Averaging predictions across an article’s sequences will statistically improve consistency and reduce misclassifications.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;a href=&#34;BertAllconfusion_matrix.png&#34; target=&#34;_blank&#34;&gt;
+  &lt;img src=&#34;BertAllconfusion_matrix.png&#34; alt=&#34;A beautiful view&#34; style=&#34;background-color: white;width:600px;&#34; onclick=&#34;window.open(this.parentNode.href); return false;&#34;&gt;
+&lt;/a&gt;
+&lt;h3 id=&#34;-conclusion-ai-powered-journal-recommendations-for-a-smarter-publishing-process&#34;&gt;🌟 Conclusion: AI-Powered Journal Recommendations for a Smarter Publishing Process&lt;/h3&gt;
+&lt;p&gt;Imagine an editor opening a new submission and immediately seeing a list of journals likely to be a perfect fit—saving time, effort, and accelerating the path to publication. This project is a significant step in that direction, showing that &lt;strong&gt;AI can bring real-world impact to scientific publishing&lt;/strong&gt;. By continuing to refine this system, we’re optimistic about achieving even more accurate, user-friendly journal recommendations.&lt;/p&gt;
+&lt;h3 id=&#34;-explore-the-code&#34;&gt;🧑‍💻 Explore the Code&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;GitHub Repository&lt;/strong&gt;: For those interested, you can explore the code in the 
+&lt;a href=&#34;https://gitlab.com/Selam08/papers-multiclass-classification&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitLab repository&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;This streamlined approach to journal recommendation combines cutting-edge NLP with practical considerations, promising efficiency gains for publishers and authors alike.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
