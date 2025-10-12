@@ -2,15 +2,17 @@
 title: Satellite Derived Bathymetry
 summary: ""
 tags:
-- Deep Learning
-- Time Series Forecasting 
-date: "2024-09-15T00:00:00Z"
+- Remote Sensing
+date: "2023-01-15T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
 
 image:
-  caption: "Performance over test period"
+  caption: "Harvested footprint detection.<br />
+   Left: processed triplet of images (one being fully cloudy).<br /> 
+   Center: pseudo-labeling.<br /> 
+   Rigth: predictions"
   focal_point: Smart
 
 links:
