@@ -35,4 +35,4 @@ slides: ""
 ---
 
 
-![Demo](/media/electricity-forecast.gif)
+![Demo](/media/bench.gif)
