@@ -44,6 +44,8 @@ jobs:
         run: sudo snap install dart-sass
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          lfs: true  
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
