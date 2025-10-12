@@ -34,4 +34,5 @@ slides: ""
 
 ---
 
-![Alt text](bench.gif "a title")
+
+![Demo](/media/electricity-forecast.gif)
