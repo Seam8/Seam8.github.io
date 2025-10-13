@@ -9,10 +9,7 @@ date: "2023-01-15T00:00:00Z"
 external_link: ""
 
 image:
-  caption: "Harvested footprint detection.<br />
-   Left: processed triplet of images (one being fully cloudy).<br /> 
-   Center: pseudo-labeling.<br /> 
-   Rigth: predictions"
+  caption: "1-day-ahead electricity demand forecasting over test period"
   focal_point: Smart
   filename: "featured.gif"
 
