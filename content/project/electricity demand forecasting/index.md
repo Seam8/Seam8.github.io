@@ -283,7 +283,7 @@ We could also have allowed the model to learn **distinct durations for each stat
 
 ### Global Performance
 
-![Performance benchmark over test period](/media/bench.gif "Performance benchmark over test period")
+![Performance benchmark over test period](featured.gif "Performance benchmark over test period")
 We can compare the overall performance of our model during the test period.
 Using a simple statistical decomposition (built with knowledge of the test period — i.e., a *“cheating”* model) as a benchmark, our solution improves the **explained variance** of the consumption signal by **27%**.
 
