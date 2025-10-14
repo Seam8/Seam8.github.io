@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Sélim Amrari
+name: Sélim Amrari Mariette
 
 # Username (this should match the folder name)
 authors:
