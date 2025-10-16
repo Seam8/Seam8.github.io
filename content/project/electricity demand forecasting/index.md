@@ -96,7 +96,7 @@ Additionally, the **Dickey-Fuller test** rejects the hypothesis of a temporal re
 ### Seasonality Analysis
 
 Next, we analyze **seasonality** using autocorrelations of the signal, with hourly and daily resampling.
-Unsurprisingly, the hourly resampling reveals a **daily seasonality** with pronounced hourly patterns: in general, consumption is highest after lunch.
+Unsurprisingly, the hourly resampling reveals a **daily seasonality** with pronounced hourly patterns: in general, consumption is highest at the end of the day.
 
 <div style="display: flex; justify-content: center; gap: 0; margin: 0; padding: 0;">
   <figure style="margin:0; padding:0 4px; text-align:center; width:48%;">
