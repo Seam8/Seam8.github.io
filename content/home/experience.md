@@ -35,7 +35,7 @@ date_format = "Jan 2006"
   company_url = ""
   location = ""
   date_start = "2025-01-20"
-  date_end = "2025-03-31"
+  date_end = "2025-05-31"
   description = """Happy Yound Dad  \n
   Responsibilities include:
   
