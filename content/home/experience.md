@@ -18,19 +18,50 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
+  title = "Freelance Data Scientist"
+  company = ""
+  company_url = ""
+  location = "Lausanne, Vaud, Switzerland"
+  date_start = "2025-06-01"
+  date_end = ""
+  description = """
+  Responsibilities include:
+  
+  * Product: built decision-support dashboards for visualization statistics and prediction commercial customer habit
+  """
+[[experience]]
+  title = "5-months career break to enjoy fatherhood - Apprentice Dad"
+  company = ""
+  company_url = ""
+  location = ""
+  date_start = "2025-01-20"
+  date_end = "2025-03-31"
+  description = """Happy Yound Dad  \n
+  Responsibilities include:
+  
+  * Learning what lack of sleep truly is but smile and laugh every day with my beautiful son !
+  """ 
+
+[[experience]]
   title = "Senior Data Scientist - AI Expert"
   company = "Calyps / Saniia SA"
   company_url = "https://saniia.ch/"
   location = "Sion, Valais, Switzerland"
   date_start = "2021-10-01"
-  date_end = ""
+  date_end = "2024-11-01"
   description = """
   Responsibilities include:
   
-  * Improved, optimized and maintain products dedicated to hospital emergency flows forecasting
+  * Product: Took leadership on hospital emergency patient flow forecasting product. Brought significant
+performance improvement through feature engineering, critical bugs identification and external data sources
+ingestion. Decreased overall prediction error by about 15%.
+  * **Customer relationship management**: conducted weekly meetings with product users
   * Developed several PoCs for customers demand forecasting and take part in the design of MVPs
   * Responsible for assessing candidates for Data Scientist roles with a focus on Natural Language Processing.
-  * Built a custom infrastructure, migrate all our deployed products into containers
+  * Built a containerized infrastructure for all the company products, reducing deployment failures
+and improving scalability. 
+ * **Mentored** the team on Docker technologies
+ * **Led technical interviews** and designed assessments for data scientist positions
   """
   
 [[experience]]
@@ -47,7 +78,8 @@ date_format = "Jan 2006"
   * Development and integration of a cloud detection pipeline for satellite images
   * Nutrient deficiency identification based on hyperspectral imagery
   * Implementation of Computer vision algorithms for sowing lines detection
-  * Supervising external efforts as well as internship on research tasks.
+  * **Supervised** external products developement with two foreign subcontractors.
+  * **Mentored** a Master-internship on a research topic.
   """
   
 [[experience]]
