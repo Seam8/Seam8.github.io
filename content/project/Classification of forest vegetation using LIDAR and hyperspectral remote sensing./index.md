@@ -71,20 +71,6 @@ Each LiDAR echo, georeferenced in 3D, was mapped to the corresponding pixel in t
 
 ---
 
-## The Data
-
-| Sensor | Acquisition | Key Specs |
-|--------|-------------|-----------|
-| APEX Hyperspectral | July 2014 | 285 bands, 2.62m resolution, 380-2500nm |
-| LIDAR | 2012-2016 | 30-80 points/m², pre-segmented to individual trees |
-| Ground truth | Field surveys | Species labels for training/validation |
-*Table 1: Data Summary*
-
-![Study area in Sauvabelin forest, Lausanne](Sauvabelin_hres.png)
-*Figure 3: Study area, in RGB bands (left) and three Hyperspectral bands (right). Green dots show "known tree" locations over rgb imagery*
-
----
-
 ## Two Scales of Analysis
 
 To compare two analysis scales and to handle class imbalance, two complementary strategies were developed:
