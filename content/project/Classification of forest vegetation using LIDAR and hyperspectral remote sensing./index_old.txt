@@ -1,0 +1,325 @@
+---
+title: Classification of forest vegetation using LIDAR and hyperspectral remote sensing.
+summary: ""
+tags:
+- Remote Sensing
+- Lidar
+- Hyperspectral
+date: "2017-04-27T00:00:00Z"
+
+# Optional external URL for project (replaces project detail page).
+external_link: ""
+
+image:
+  caption: "LiDAR point cloud segmented into individual trees <br />
+    and projected onto hyperspectral raster data"
+  focal_point: Smart
+
+links:
+url_code: ""
+url_pdf: file/classification-hyperspectrale_SA.pdf
+url_slides: ""
+url_video: ""
+
+---
+# Classifying Trees with LIDAR and Hyperspectral Remote Sensing
+
+*Using machine learning to identify tree species from airborne sensor data. Ten years ago, during my studies, this topic was one of my very first encounters with machine learning. An exciting project that I would, of course, approach differently today. Here is a summary of it.*
+
+## The Challenge
+
+Can we automatically identify tree species in urban and forest environments using remote sensing? This project explored combining two complementary data sources — LIDAR and hyperspectral imagery — to classify trees by genus and species in Swiss forests near Lausanne.
+
+![Study area in Sauvabelin forest, Lausanne](Sauvabelin_hres.png)
+*Figure 1: Study area, in RGB bands (left) and three Hyperspectral bands (right). Green dots show "known tree" locations over rgb imagery*
+
+## Why Combine Two Sensors?
+
+**Hyperspectral cameras** capture a much larger number of narrow wavelength bands (ranging from visible to infrared), creating unique spectral signatures for each tree species based on their leaf chemistry and structure.
+
+**LIDAR point clouds** provide precise 3D spatial data, allowing us to locate individual trees and measure their morphology (height distribution, crown shape...).
+
+Together, these sensors provide both "what it looks like spectrally" and "what shape it is"—powerful complementary information for species classification.
+
+## The Data
+
+| Sensor | Acquisition | Key Specs |
+|--------|-------------|-----------|
+| APEX Hyperspectral | July 2014 | 285 bands, 2.62m resolution, 380-2500nm |
+| LIDAR | 2012-2016 | 30-80 points/m², pre-segmented to individual trees |
+| Ground truth | Field surveys | Species labels for training/validation |
+*Table 1: Data Summary*
+
+## Methodology: Two Scales of Analysis
+
+I experimented with classification at two different observational scales:
+
+### Tree-Scale Observations (Dataset 1)
+Each tree is represented by aggregating the reflectances of pixels weighted by the number of LIDAR points they contain. This produces a single spectral signature per tree, resulting in 224 observations across 5 tree classes (with a minimum of 19 trees per class).
+
+![Reflectance weighting by LIDAR echo density](figure-2-weighting.png)
+*Figure 2: Weighting reflectances by the number of LIDAR echoes from each tree contained in each pixel*
+
+### Pixel-Scale Observations (Dataset 2)
+Tree crown shapes estimated from LIDAR are projected onto the imagery. Only pixels entirely contained within a crown projection are used, avoiding mixed pixels. This generates a much larger dataset of 5,926 observations across 11 classes (minimum 100 pixels per class).
+
+| Dataset | Observation Scale | Min. Representation | Total Observations | Number of Classes |
+|---------|------------------|---------------------|-------------------|-------------------|
+| 1 | Tree-level (aggregated) | 19 trees per class | 224 | 5 |
+| 2 | Pixel-level | 100 pixels per class | 5,926 | 11 |
+
+*Table 2: Training dataset characteristics*
+
+### Species Inventory
+
+| Genus | Species | Division | Common Name | Dataset 1 | Dataset 2 |
+|-------|---------|----------|-------------|-----------|-----------|
+| Acer | pseudoplatanus | Magnoliophyta | Sycamore maple | ✓ | |
+| Larix | decidua | Coniferophyta | European larch | ✓ | ✓ |
+| Picea | abies | Coniferophyta | Norway spruce | ✓ | ✓ |
+| Quercus | robur | Magnoliophyta | Pedunculate oak | ✓ | ✓ |
+| Abies | alba | Coniferophyta | Silver fir | | ✓ |
+| Fagus | sylvatica | Magnoliophyta | European beech | | ✓ |
+| Fraxinus | excelsior | Magnoliophyta | European ash | | ✓ |
+| Pinus | sylvestris | Coniferophyta | Scots pine | | ✓ |
+| Pseudotsuga | menziesii | Coniferophyta | Douglas fir | | ✓ |
+| Quercus | petraea | Magnoliophyta | Sessile oak | | ✓ |
+| Various | residual species | Mixed | Other species | ✓ | |
+
+*Table 3: Tree species inventory by dataset*
+
+## Feature Engineering
+
+I tested three types of descriptors as predictive variables:
+
+### 1. Spectral Reflectances
+All 285 spectral bands used directly as features (wavelengths ranging from 0.41261 to 2.4313 μm).
+
+### 2. Spectral Indices
+Calculated vegetation indices (29-45 indices depending on dataset), including:
+- Vegetation indices: NDVI, EVI, GNDVI, SAVI, MSAVI, OSAVI
+- Chlorophyll indices: MCARI, MTCI, CRI
+- Water indices: NDWI (1240 nm and 1640 nm), LWI
+- Pigment indices: PRI, ARI, PSRI
+- And many more specialized indices
+
+### 3. Morphological Descriptors (Dataset 1 only)
+LIDAR-derived features including:
+- Height distribution quantiles (2.5th, 10th, 20th, 25th, 30th, 40th, 50th, 60th, 70th, 75th, 80th, 90th, 97.5th percentiles)
+- Total tree height
+
+## Classification Approach: Support Vector Machines
+
+![Linear SVM separation example](hyperplanes.png)
+*Figure 3: Visualization of linear class separation in a two-descriptor space. The line is defined by maximum margin separation, with three observations (circled) identified as support vectors. (Image from scikit-learn documentation)*
+
+I used Support Vector Machines (SVM) with different configurations:
+
+- **Linear kernel** vs **Radial Basis Function (RBF) kernel**
+- **No preprocessing** vs **PCA decorrelation** vs **PCA with 99% variance retention**
+- **Feature multiplication** (creating interaction terms) with L1 regularization
+
+The "one-vs-rest" strategy was employed for multi-class classification, with class-frequency-weighted regularization to handle imbalanced classes.
+
+Model selection used stratified k-fold cross-validation (4 folds for Dataset 1, 10 folds for Dataset 2), evaluated using precision, recall, and F1-score metrics.
+
+## Key Findings
+
+### Dataset 1: Tree-Scale Classification Results
+
+| Kernel | PCA Decorr. | PCA 99% | Feature Mult. | LIDAR | F1-Score |
+|--------|-------------|---------|---------------|-------|----------|
+| Linear | | | | | 0.664 |
+| Linear | ✓ | | | ✓ | 0.716 |
+| **RBF** | **✓** | | | **✓** | **0.760** |
+| RBF | | | | | 0.669 |
+| RBF | | | ✓ | ✓ | 0.726 |
+
+*Table 4: Selected results for reflectance-based classification (Dataset 1)*
+
+| Kernel | PCA Decorr. | PCA 99% | Feature Mult. | LIDAR | F1-Score |
+|--------|-------------|---------|---------------|-------|----------|
+| Linear | | | | | 0.638 |
+| Linear | ✓ | | ✓ | ✓ | 0.711 |
+| **RBF** | | | | **✓** | **0.756** |
+| RBF | ✓ | | | ✓ | 0.720 |
+
+*Table 5: Selected results for spectral indices classification (Dataset 1)*
+
+### The Power of Complementary Data
+
+Adding LIDAR-derived morphological descriptors to spectral features produced **systematic and substantial performance improvements**. For tree-scale observations, this combination achieved the best results.
+
+### Best Performing Model
+
+The optimal configuration for Dataset 1 achieved an **F1-score of 0.760**:
+- RBF kernel SVM
+- PCA decorrelation (no dimension reduction)
+- Combined spectral reflectances and LIDAR morphological descriptors
+
+<div style="display: flex; justify-content: center; gap: 0; margin: 0; padding: 0;">
+  <figure style="margin:0; padding:0 4px; text-align:center; width:45%;">
+    <img src="Best1Clip.png" alt="Model performance across different hyperparameters" style="width:100%; margin:0; padding:0;">
+    <figcaption style="font-size:0.9em; margin-top:0px;"> (a) Model adjustment across hyperparameters</figcaption>
+  </figure>
+  <figure style="margin:0; padding:0 4px; text-align:center; width:53.5%;">
+    <img src="linClip.png" alt="Performances during the calibration process" style="width:100%; margin:0; padding:0;">
+    <figcaption style="font-size:0.9em; margin-top:0px;">(b) Model validation with Weighted average F1-score across validation folds.</figcaption>
+  </figure>
+</div>
+
+*Figure 4: (a) Model adjustment as a function of gamma (kernel parameter) and C (regularization). Best performance: C = 366.52, gamma = 4.9238e-5, F1-score = 0.760, Accuracy = 0.768. (b) Weighted average F1-score across validation folds. *
+
+Individual class performance varied significantly:
+
+**Best validation fold results:**
+
+| Species | Precision | Recall | F1-Score | Count |
+|---------|-----------|--------|----------|-------|
+| Other varieties | 0.54 | 0.70 | 0.61 | 13 |
+| Acer pseudoplatanus | 0.74 | 0.94 | 0.83 | 18 |
+| Larix decidua | 0.83 | 1.00 | 0.91 | 5 |
+| Picea abies | 1.00 | 0.88 | 0.93 | 8 |
+| Quercus robur | 0.92 | 1.00 | 0.96 | 12 |
+| **Average/Total** | **0.88** | **0.86** | **0.85** | **56** |
+
+*Table 8: Best validation fold results (RBF kernel, PCA decorrelation, with LIDAR descriptors)*
+
+**Confusion matrix for best fold:**
+
+|  | Predicted: A.v. | A.p. | L.d. | P.a. | Q.r. |
+|--|----------------|------|------|------|------|
+| **Actual: Other varieties** | 7 | 0 | 0 | 0 | 6 |
+| **Acer pseudoplatanus** | 0 | 17 | 0 | 0 | 1 |
+| **Larix decidua** | 0 | 0 | 5 | 0 | 0 |
+| **Picea abies** | 0 | 0 | 1 | 7 | 0 |
+| **Quercus robur** | 0 | 0 | 0 | 0 | 12 |
+
+**Worst validation fold results:**
+
+| Species | Precision | Recall | F1-Score | Count |
+|---------|-----------|--------|----------|-------|
+| Other varieties | 0.57 | 0.31 | 0.40 | 13 |
+| Acer pseudoplatanus | 0.78 | 0.74 | 0.76 | 19 |
+| Larix decidua | 1.00 | 0.80 | 0.89 | 5 |
+| Picea abies | 0.90 | 1.00 | 0.95 | 9 |
+| Quercus robur | 0.63 | 1.00 | 0.77 | 12 |
+| **Average/Total** | **0.74** | **0.74** | **0.72** | **58** |
+
+*Table 9: Worst validation fold results (RBF kernel, PCA decorrelation, with LIDAR descriptors)*
+
+Key observations:
+- *Picea abies* (Norway spruce) and *Quercus robur* (pedunculate oak) were classified with high accuracy (F1 > 0.90)
+- The "other species" residual class proved most challenging (F1 ≈ 0.40-0.70), which was expected given its inherent variability
+- Without this residual class, the model achieved F1-scores between 0.82-0.89
+
+### Dataset 2: Pixel-Scale Classification Results
+
+| Kernel | PCA Decorr. | PCA 99% | Feature Mult. | F1-Score |
+|--------|-------------|---------|---------------|----------|
+| Linear | | | | 0.721 |
+| **Linear** | **✓** | | | **0.724** |
+| Linear | | ✓ | | 0.629 |
+| Linear | | | ✓ | 0.680 |
+
+*Table 10: Results for reflectance-based classification (Dataset 2)*
+
+Dataset 2, despite having 26 times more observations, achieved slightly lower performance (best F1: 0.724) using a linear kernel with decorrelated reflectances. This suggests that:
+- Larger datasets enable simpler model configurations
+- Tree-level aggregation may reduce noise in pixel-level data
+- Some classes remained challenging (*Abies alba* consistently showed F1 < 0.35)
+
+![Parameter optimization for Dataset 2](figure-5-dataset2-optimization.png)
+*Figure 5: Model adjustment as a function of parameter C. Best performance: C = exp(-1.5172), F1-score = 0.724, Accuracy = 0.746*
+
+**Best validation fold (filtered dataset):**
+
+| Species | Precision | Recall | F1-Score | Count |
+|---------|-----------|--------|----------|-------|
+| Abies alba | 0.50 | 0.14 | 0.22 | 14 |
+| Fagus sylvatica | 0.80 | 1.00 | 0.89 | 40 |
+| Larix decidua | 0.96 | 0.96 | 0.96 | 24 |
+| Pseudotsuga menziesii | 0.82 | 0.92 | 0.87 | 25 |
+| Quercus petraea | 0.90 | 0.86 | 0.88 | 85 |
+| Quercus robur | 0.96 | 1.00 | 0.98 | 24 |
+| **Average/Total** | **0.86** | **0.87** | **0.86** | **212** |
+
+*Table 11: Best validation fold results, Dataset 2 (Linear kernel, PCA decorrelation)*
+
+**Confusion matrix for best fold:**
+
+|  | Predicted: A.a. | F.s. | L.d. | P.m. | Q.p. | Q.r. |
+|--|----------------|------|------|------|------|------|
+| **Actual: Abies alba** | 2 | 0 | 1 | 3 | 8 | 0 |
+| **Fagus sylvatica** | 0 | 40 | 0 | 0 | 0 | 0 |
+| **Larix decidua** | 0 | 1 | 23 | 0 | 0 | 0 |
+| **Pseudotsuga menziesii** | 1 | 1 | 0 | 23 | 0 | 0 |
+| **Quercus petraea** | 1 | 8 | 0 | 2 | 73 | 1 |
+| **Quercus robur** | 0 | 0 | 0 | 0 | 0 | 24 |
+
+**Validation on unfiltered dataset:**
+
+| Species | Precision | Recall | F1-Score | Count |
+|---------|-----------|--------|----------|-------|
+| Abies alba | 0.57 | 0.21 | 0.31 | 19 |
+| Fagus sylvatica | 0.85 | 0.81 | 0.83 | 72 |
+| Larix decidua | 0.52 | 0.81 | 0.63 | 16 |
+| Pseudotsuga menziesii | 0.74 | 0.91 | 0.82 | 22 |
+| Quercus petraea | 0.80 | 0.81 | 0.80 | 53 |
+| Quercus robur | 0.95 | 1.00 | 0.97 | 18 |
+| **Average/Total** | **0.78** | **0.78** | **0.77** | **200** |
+
+*Table 12: Validation on unfiltered test set (Linear kernel, PCA decorrelation)*
+
+### Preprocessing Insights
+
+**PCA decorrelation** generally improved or maintained performance, especially with limited observations.
+
+**Aggressive dimension reduction** (retaining only 99% variance) usually hurt performance, suggesting important discriminative information exists in lower-variance components.
+
+**Feature multiplication** (creating polynomial features) showed mixed results - beneficial for spectral indices in small datasets, but counterproductive for high-dimensional reflectance data.
+
+## Practical Implications
+
+This work demonstrates that:
+
+1. **Sensor fusion works**: Adding morphological features from LIDAR to spectral data produced **systematic, substantial improvements** across all models. The sensors are truly complementary.
+
+2. **Quality over quantity**: With careful feature engineering, accurate classification is possible with relatively small training sets (224 trees)
+
+4. **Scale considerations**: Tree-level aggregation may be preferable to pixel-level classification when dealing with limited training data
+
+## Limitations and Future Directions
+
+Several challenges remain:
+
+- **Residual class variability**: The "other species" category inherently contains high spectral and morphological diversity
+- **Underrepresented species**: Some classes had insufficient samples for robust model training
+- **Temporal mismatch**: LIDAR and hyperspectral data were acquired in different seasons/years
+
+Potential improvements could include:
+- **Multi-temporal data** to capture seasonal phenological differences
+- **Additional morphological features** beyond height distributions
+
+## Conclusion
+
+This project successfully demonstrated the feasibility of automated tree species classification in complex urban and peri-urban environments using airborne remote sensing. By combining the spatial precision of LIDAR with the spectral richness of hyperspectral imagery, we achieved classification performance (F1 = 0.76) with limited training data.
+
+This project demonstrated that automated tree species classification is feasible in complex environments using airborne remote sensing. By fusing LIDAR's spatial precision with hyperspectral imagery's spectral richness
+
+The approach shows promise for:
+- **Forestry management**: Rapid species inventories over large areas
+- **Urban planning**: Monitoring urban forest composition
+- **Biodiversity assessment**: Tracking species distribution changes
+- **Carbon accounting**: Species-specific biomass estimates
+---
+
+*Project completed in 2017 at EPFL, supervised by Matthew Parkan*
+
+---
+
+## Technical Notes
+
+**Tools used:** Python, scikit-learn, NumPy, SciPy  
+**Data sources:** APEX hyperspectral system, Optech/Riegl LIDAR, Swiss forestry field surveys  
+**Code availability:** Contact for technical report (French)
