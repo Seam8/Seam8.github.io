@@ -19,8 +19,8 @@ links:
 - icon: laptop
   icon_pack: fab
   name: Demo Platform
-  url: https://selam88-tempo-dash.streamlit.app/
-url_code: "https://selam88-tempo-dash.streamlit.app/"
+  url: https://test-dash-delph.streamlit.app/
+#url_code: "https://selam88-tempo-dash.streamlit.app/"
 
 url_pdf: ""
 url_slides: ""
