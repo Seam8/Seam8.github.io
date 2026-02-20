@@ -18,11 +18,8 @@ image:
   focal_point: Smart
 
 links:
-- icon: gitlab
   icon_pack: fab
   name: Follow
-  url: https://gitlab.com/Selam08/ImageSequence_2_PixelSegmentation
-url_code: "https://gitlab.com/Selam08/ImageSequence_2_PixelSegmentation"
 url_pdf: ""
 url_slides: ""
 url_video: ""
@@ -62,5 +59,3 @@ The previous image shows the internal hidden states, referred to as short-term m
 
 In this experiment, ConvLSTM-based networks were trained to identify the most recently harvested areas in agricultural parcels. The training labels were generated using pseudo-labeling,by applying a heuristic formula with discretization to sections of the images. Parcels were divided into training, validation, and test sets to ensure that none were present in both the test/validation and training sets. As seen in the previous image, the model manages to detect harvested surfaces more accurately and more integrally than the pseudo-labeling used.  It also demonstrates a much stronger ability to recognize harvests under various climatic conditions.
 
-
-[Check the code on the repository !](https://gitlab.com/Selam08/ImageSequence_2_PixelSegmentation).
